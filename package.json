@@ -1,0 +1,40 @@
+{
+  "name": "@paralect/mail-service-client",
+  "version": "0.0.3",
+  "author": "Paralect",
+  "description": "Mailgun wrapper",
+  "private": false,
+  "main": "src/index.js",
+  "scripts": {
+    "test": "eslint ./src",
+    "add-contributor": "all-contributors add",
+    "generate-contributors": "all-contributors generate"
+  },
+  "keywords": [
+    "email service",
+    "mailgun"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@paralect/common-logger": "0.1.10",
+    "@paralect/eslint-config": "0.1.5",
+    "handlebars": "4.0.11",
+    "mailgun-js": "0.18.0"
+  },
+  "devDependencies": {
+    "all-contributors-cli": "4.11.2",
+    "babel-eslint": "8.2.3",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.9.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paralect/email-service.git"
+  }
+}
