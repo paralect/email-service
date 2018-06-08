@@ -1,0 +1,17 @@
+pipeline:
+  run-mongo-tests:
+    image: node:8.9.4
+    commands:
+      - ./bin/run.sh
+    when:
+      status: [ failure, success ]
+      event: [pull_request]
+
+  publish-node-mongo:
+    image: plugins/npm
+    secrets: [ npm_username, npm_email, npm_password ]
+    when:
+      event: [ tag ]
+      branches: [ master ]
+
+branches: [ master, "*:master" ]
