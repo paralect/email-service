@@ -31,7 +31,7 @@ npm i @paralect/email-service
 
 To create a MailService class you should provide several params to its constructor
 ```javascript
-const MailService = require('@paralect/mail-service-client');
+const MailService = require('@paralect/email-service');
 
 const mailService = new MailService({
   isSendEmail: false, // you can prevent email sending by this param
@@ -46,25 +46,34 @@ const mailService = new MailService({
 
 After that you are able to run **send** method with several params
 
+```javascript
+const result = await mailService.send(
+  'email.html',
+  { name: 'User name' },
+  {
+    from: 'Excited User <me@samples.mailgun.org>',
+    to: 'test@test.com',
+    subject: 'Test email',
+  }
+);
+```
 
-**send(templateName, templateData, data = {})**
+## Full API Reference
 
-**templateName** - the template name which can be built by **mail-service-build** command (it should contain extension now, for example, report.html)<br />
-**templateData** - template data which will be injected to the template <br />
-**data** - additional email data (subject, email logo and etc.)
+[API Reference](https://github.com/paralect/email-service/blob/master/API.md).
 
 ## Change Log
 
 This project adheres to [Semantic Versioning](http://semver.org/).
-Every release is documented on the Github [Releases](https://github.com/paralect/node-mongo/releases) page.
+Every release is documented on the Github [Releases](https://github.com/paralect/email-service/releases) page.
 
 ## License
 
-Node-mongo is released under the [MIT License](LICENSE).
+Email-service is released under the [MIT License](https://github.com/paralect/email-service/blob/master/LICENSE).
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/paralect/email-service/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Contributors
 

@@ -1,6 +1,6 @@
 {
-  "name": "@paralect/mail-service-client",
-  "version": "0.0.3",
+  "name": "@paralect/email-service",
+  "version": "0.1.0",
   "author": "Paralect",
   "description": "Mailgun wrapper",
   "private": false,
