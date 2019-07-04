@@ -6,4 +6,3 @@ module.exports = {
   writeFile: promisify(fs.writeFile),
   __fs: fs,
 };
-
