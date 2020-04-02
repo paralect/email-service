@@ -1,7 +1,7 @@
 const mailgun = require('mailgun-js');
 const assert = require('assert');
 
-const { logger } = global;
+const logger = require('./logger');
 
 class Mailer {
   constructor(config) {
