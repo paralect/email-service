@@ -1,3 +1,6 @@
 module.exports = {
-  "extends": "@paralect/eslint-config"
+  "extends": "airbnb-base",
+  "env": {
+    "node": true,
+  },
 };
