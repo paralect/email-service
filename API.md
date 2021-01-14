@@ -19,7 +19,7 @@ Class which creates instances to sent emails.
     - `publicApiKey` - *(String)* - Your public Mailgun API KEY
     - `domain` - *(String)* - Your Mailgun Domain (Please note: domain field is `MY-DOMAIN-NAME.com`, not `https://api.mailgun.net/v3/MY-DOMAIN-NAME.com`)
     - `mute` - *(Boolena)* - Set to `true` if you wish to mute the console error logs in validateWebhook() function
-    - `proxy` - *(String)* - The proxy URI in format `http[s]://[auth@]host:port`. ex: `'http://proxy.example.com:8080'`
+    - `agent` - The [Agent](https://nodejs.org/docs/latest-v10.x/api/http.html#http_class_http_agent) to use - see [request](https://nodejs.org/docs/latest-v10.x/api/http.html#http_http_request_options_callback) options for the provided values. **Note** When providing an `agent` it must be able to handle the provided (or default) `protocol`.
     - `timeout` - *(Number)* - Request timeout in milliseconds
     - `host` - *(String)* - the mailgun host (default: `'api.mailgun.net'`)
     - `protocol` - *(String)* - the mailgun protocol (default: `'https:'`, possible values: `'http:'` or `'https:'`)

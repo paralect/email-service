@@ -1,4 +1,4 @@
-const mailgun = require('mailgun-js');
+const mailgun = require('@paralect/mailgun-js');
 const assert = require('assert');
 
 const logger = require('./logger');

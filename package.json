@@ -1,6 +1,6 @@
 {
   "name": "@paralect/email-service",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "author": "Paralect",
   "description": "Mailgun wrapper",
   "private": false,
@@ -17,8 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "@paralect/common-logger": "0.1.10",
-    "handlebars": "4.7.4",
-    "mailgun-js": "0.22.0"
+    "@paralect/mailgun-js": "^0.24.0",
+    "handlebars": "4.7.4"
   },
   "devDependencies": {
     "all-contributors-cli": "6.14.1",
